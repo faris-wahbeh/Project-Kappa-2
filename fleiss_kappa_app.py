@@ -105,12 +105,9 @@ print("Kappa scores excluding each reviewer:", kappa_scores)
 
 
 # Streamlit UI
-st.title("Rayyan Systems Fleiss' Kappa Testing App")
+st.title("Rayyan Fleiss' Kappa Testing")
 
-st.write("""
-This app calculates Fleiss' Kappa for multiple raters with binary ratings and analyzes which reviewer 
-contributes most to a lower Fleiss' Kappa score by excluding each reviewer one at a time.
-""")
+
 
 # Input number of reviewers and items
 num_reviewers = st.number_input("Number of reviewers:", min_value=2, value=3)
