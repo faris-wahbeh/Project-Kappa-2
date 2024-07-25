@@ -131,7 +131,7 @@ if st.button("Calculate Fleiss' Kappa"):
         else:
             kappa, po = fleiss_kappa_binary(ratings)
             st.write(f"Fleiss' Kappa: {kappa}")
-            st.write(f"Proportion of times the raters agree (Po): {po}")
+   
 
             most_contributory_reviewer, highest_kappa, kappa_scores = reviewer_contribution_analysis(ratings)
             st.write(f"Most contributory reviewer to lower Kappa score: Reviewer {most_contributory_reviewer + 1}")
