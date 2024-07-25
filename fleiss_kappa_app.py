@@ -136,6 +136,6 @@ if st.button("Calculate Fleiss' Kappa"):
             most_contributory_reviewer, highest_kappa, kappa_scores = reviewer_contribution_analysis(ratings)
             st.write(f"Most contributory reviewer to lower Kappa score: Reviewer {most_contributory_reviewer + 1}")
             st.write(f"Highest Kappa score obtained by excluding a reviewer: {highest_kappa}")
-            st.write(f"Kappa scores excluding each reviewer: {kappa_scores}")
+
     except ValueError as e:
         st.error(f"Error: {e}")
